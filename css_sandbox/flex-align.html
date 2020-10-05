@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Align</title>
+  <style>
+
+    .container {
+      background: #555;
+      display: flex;
+      flex-wrap: wrap;
+      /* To align items horizontally */
+      justify-content: space-evenly;
+
+      height: 600px;
+      /* To align items vertically (height required) */
+      align-items: baseline;
+
+      /* Align items vertically where there is extra space */
+      align-content: space-between;
+    }
+    
+    .item-2 {
+      /* Align single item */
+      align-self: center;
+    }
+    
+    .item {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin: 0.5rem;
+      /* width: 300px; */
+      /* Same as width */
+      flex-basis: 200px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item-1"><h3>Item 1</h3></div>
+    <div class="item item-2"><h3>Item 2</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div>
+    <!-- <div class="item item-3"><h3>Item 3</h3></div> -->
+    <!-- <div class="item item-3"><h3>Item 3</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div> -->
+    <!-- <div class="item item-3"><h3>Item 3</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div> -->
+    <!-- <div class="item item-3"><h3>Item 3</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div> -->
+  </div>
+</body>
+</html>

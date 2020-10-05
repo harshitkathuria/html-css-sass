@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS GRID COLUMNS</title>
+  <style>
+    body {
+      background: #f4f4f4;
+    }
+
+
+    .grid {
+      display: grid;
+      /* grid-template-columns: 200px auto 200px; */
+      /* grid-template-columns: auto auto auto; */
+      /* grid-template-columns: repeat(3, auto); */
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-gap: 10px;
+    }
+
+    .item {
+      background-color: #ccc;
+      padding: 3rem;
+      color: #333;
+      border: 1px solid #e4e4e4;
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <div class="item">Item1</div>
+      <div class="item">Item2</div>
+      <div class="item">Item3</div>
+      <div class="item">Item4</div>
+      <div class="item">Item5</div>
+      <div class="item">Item6</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rerum dolorem maxime minima reprehenderit adipisci, quis labore incidunt nobis eius.</p>
+  </div>
+
+  <main>
+    <section>
+      <h3>Section</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum aliquid similique sed, veritatis distinctio repellat vitae quisquam eum soluta, cupiditate id, quo libero nemo ut dolorum suscipit! Earum, rerum.</p>
+    </section>
+    <aside>
+      <h3>Hello World</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quis?</p>
+    </aside>
+  </main>
+</body>
+</html>
